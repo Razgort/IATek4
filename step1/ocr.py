@@ -9,10 +9,10 @@ class nn:
     self.nbHiddenLayers = 100
     self.hiddenUnits = 500
     self.outputUnits = 95
+    print("Neural Net initialized")
 
 def main():
-  print("Starting Neural Net")
-  nn("./input_data", "./foutput_data")
+  nn("./input_data", "./output_data")
 
 if __name__ == "__main__":
   main()
