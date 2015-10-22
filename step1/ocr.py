@@ -7,7 +7,7 @@ import numpy as np
 def getImageArray(imagepath):
     try:
       image = im.open(imagepath)
-      imagearray=np.asarray(image.crop(image.getbbox()).resize((10,10))).astype(float)
+      imagearray = np.asarray(image.crop(image.getbbox()).resize((10,10))).astype(int)
       return imagearray
     except IOError:
       print "File Not Found"
