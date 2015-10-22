@@ -1,22 +1,18 @@
 #!/usr/bin/python
 
-import pybrain
-import Image as im
-import numpy as np
+import utils 
 
-def getImageArray(imagepath):
-    try:
-      image = im.open(imagepath)
-      imagearray = np.asarray(image.crop(image.getbbox()).resize((10,10)))
-      return imagearray
-    except IOError:
-      print "File Not Found"
-      return np.zeros((10,10))
-
+class nn:
+  def __init__(self, input_path, output_path):
+    self.input_paths = utils.readLines(input_path)
+    self.output_value = utils.readLines(output_path)
+    self.nbHiddenLayers = 100
+    self.hiddenUnits = 500
+    self.outputUnits = 95
 
 def main():
   print("Starting Neural Net")
-  print(getImageArray("data/a.bmp"))
+  nn("./input_data", "./foutput_data")
 
 if __name__ == "__main__":
   main()
