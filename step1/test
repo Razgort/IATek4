@@ -1,5 +1,5 @@
-data/a.bmp
-data/a_small.bmp
+data/a.bmp;A
+data/a_small.bmp;a
 data/b.bmp
 data/b_small.bmp
 data/c.bmp
