@@ -1,10 +1,10 @@
 import numpy as np
 import Image as im
 
-def getImageArray(imagepath, width, height):
+def getImageArray(imagepath, units):
   try:
     image = im.open(imagepath)
-    imagearray = np.asarray(image.crop(image.getbbox()).resize((50, 50)))
+    imagearray = np.asarray(image.crop(image.getbbox()).resize((units, units)))
     return imagearray
   except IOError:
     print("File not found !")
