@@ -1,0 +1,459 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"gt",
+				"gt-pressura-regular-web-webfont"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"che",
+				"PermissionCheck"
+			],
+			[
+				"angry",
+				"AngryAssign"
+			],
+			[
+				"angr",
+				"AngryAssign"
+			],
+			[
+				"getR",
+				"GetRaidLeader"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ANA",
+		"selected_items":
+		[
+			[
+				"ANA",
+				"Anaconda: Set Python interpreter"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"emmet",
+				"Toggle Comment"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 120.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib2,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation') ",
+			"Package Control: Install Package",
+			"Package Control",
+			"Package Control: Install Package;",
+			"Package Control: Install Package",
+			"emmet"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/Diablo 3 HUD/Demonbuddy 1.1.2636.427/Logs/17380 2015-09-25 20.40.txt",
+		"/E/Téléchargement/j0n17-kernel_programming-6aae981d9470/j0n17-kernel_programming-6aae981d9470/syscall/0001-for-patch-syscall.patch",
+		"/E/Document/PSU_2013_zappy/src_client/Makefile",
+		"/E/Save/save opensuse STD TEK 1/moulay_a/tek1/42sh/Makefile",
+		"/E/liste programs.txt",
+		"/E/Document/PSU_2013_zappy/src_graphic/Makefile",
+		"/E/Document/PSU_2013_zappy/Makefile",
+		"/E/Diablo 3 HUD/Demonbuddy 1.1.2537.422/Changelog.txt",
+		"/E/Téléchargement/UberBot v0.5/UberBot - Readme.txt",
+		"/E/Diablo 3 HUD/Demonbuddy 1.1.2537.422/Demonbuddy.exe.config",
+		"/C/wamp/www/Clovis-Quentin/save/Clovis-App/forless.php",
+		"/C/wamp/www/Clovis-Quentin/save/Clovis-App/app/.htaccess",
+		"/C/wamp/www/Clovis-App/Clovis-Web/web/app_dev.php",
+		"/C/wamp/www/Clovis-Quentin/Clovis-App/app/config/parameters.yml",
+		"/C/wamp/bin/php/php5.5.12/php.ini",
+		"/C/wamp/www/Clovis-App/Clovis-Web/composer.json",
+		"/E/Save/cle box lyon.txt",
+		"/E/Diablo 3 HUD/Demonbuddy 1.1.2537.422/Plugins/Trinity/Combat/Abilities/MonkCombat.cs",
+		"/E/Téléchargement/TurboHUD 15.8.27.0 (v5) STABLE for Diablo III 2.3.0.33174/doc/manual.txt",
+		"/C/wamp/www/Clovis-Quentin/Clovis-App/composer.json",
+		"/C/wamp/www/Clovis-App/Clovis-Web/app/config/parameters.yml",
+		"/C/wamp/www/Clovis-App/Clovis-Web/app/.htaccess",
+		"/E/Document/Clovis-Quentin/Clovis-App/UPGRADE.md",
+		"/C/wamp/bin/apache/apache2.4.9/conf/httpd.conf",
+		"/C/wamp/www/Clovis-App/Clovis-Web/web/.htaccess",
+		"/E/saveWampFolders/Clovis-App/Clovis-Web/app/config/parameters.yml",
+		"/C/wamp/www/Clovis-App/Clovis-Web/app/logs/dev.log",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/wamp/www/cine_angular/server/server.js",
+		"/E/babun-1.1.0/install.txt",
+		"/E/Téléchargement/parameters.yml",
+		"/E/Téléchargement/babun-1.1.0-dist/babun-1.1.0/install.txt",
+		"/C/wamp/www/Clovis-App/Clovis-Web/app/parameters.yml",
+		"/C/wamp/www/Clovis-LandingPage/index.html",
+		"/C/wamp/www/Clovis-LandingPage/css/perso.css",
+		"/E/Téléchargement/startbootstrap-creative-1.0.1/startbootstrap-creative-1.0.1/font-awesome/css/font-awesome.css",
+		"/E/Téléchargement/startbootstrap-creative-1.0.1/startbootstrap-creative-1.0.1/css/creative.css",
+		"/E/Téléchargement/startbootstrap-creative-1.0.1/startbootstrap-creative-1.0.1/css/perso.css",
+		"/E/Téléchargement/startbootstrap-creative-1.0.1/startbootstrap-creative-1.0.1/index.html",
+		"/E/Téléchargement/startbootstrap-creative-1.0.1/startbootstrap-creative-1.0.1/img/pictos/svg/clovis_logo.svg",
+		"/E/Téléchargement/Adobe Photoshop CC 2014.2.2 20141204.r.310.x64/PhotoShopCC1522Win64/Crack/adobe.snr.patch-painter/Utilisation Patch.txt",
+		"/E/Téléchargement/startbootstrap-creative-1.0.1/startbootstrap-creative-1.0.1/font-awesome/css/font-awesome.min.css",
+		"/E/Téléchargement/startbootstrap-creative-1.0.1/startbootstrap-creative-1.0.1/css/animate.min.css",
+		"/E/Document/referenceOpposition.txt",
+		"/E/Document/referenceOppotition.txt",
+		"/C/wamp/www/Clovis-App/Clovis-Web/src/Clovis/UserBundle/UserBundle.php",
+		"/C/wamp/www/Clovis-App/Clovis-Web/src/Clovis/UserBundle/Controller/UserController.php",
+		"/C/wamp/www/Clovis-App/Clovis-Web/src/Clovis/UserBundle/Resources/config/routing.yml",
+		"/C/wamp/www/Clovis-App/Clovis-Web/app/AppKernel.php",
+		"/E/MongoDB/tets.txt",
+		"/E/Document/Bibliothèque calibre/Inconnu(e)/230100GIE_SERAPIS_cs5.indd (215)/metadata.opf",
+		"/C/wamp/www/index.php",
+		"/C/Users/Razgort/AppData/Local/Temp/fz3temp-1/CompanyController.php",
+		"/E/MongoDB/mongod.cfg",
+		"/E/MongoDB/mongo.config",
+		"/C/Users/Razgort/AppData/Local/Temp/fz3temp-1/CompanyType.php",
+		"/C/Users/Razgort/AppData/Local/Temp/fz3temp-1/company_info_register.html.twig",
+		"/C/Users/Razgort/AppData/Local/Temp/fz3temp-1/register_content.html.twig",
+		"/C/Users/Razgort/AppData/Local/Temp/fz3temp-1/config.yml",
+		"/C/Program Files/Core Temp/Readme.txt",
+		"/E/Document/mongo.config",
+		"/E/Document/ClovisSave/Clovis-App/Android/app/build.gradle",
+		"/E/Document/Clovis-App/Android/app/src/main/AndroidManifest.xml",
+		"/E/Téléchargement/64-bit/Nouveau document texte.txt",
+		"/E/Document/Clovis-App/Android/app/src/main/res/values/dimens.xml",
+		"/E/Document/Clovis-App/Android/app/src/main/res/values-w820dp/dimens.xml",
+		"/E/Document/Clovis-App/Android/app/src/main/res/drawable/values/strings.xml",
+		"/E/Téléchargement/ParsePlatform-OfflineTodos-959e2a6/android/res/layout/activity_todo_list.xml",
+		"/E/Document/Clovis-App/Android/.idea/workspace.xml",
+		"/E/Document/Clovis-App/Android/app/src/main/res/values/styles.xml",
+		"/E/Document/Clovis Site Web/Clovis-App/Clovis-Web/app/console",
+		"/E/Téléchargement/ParsePlatform-OfflineTodos-959e2a6/android/res/menu/todo_list.xml",
+		"/E/Téléchargement/ParsePlatform-OfflineTodos-959e2a6/android/AndroidManifest.xml",
+		"/E/Téléchargement/OculusUnityIntegration/Release_Notes.txt",
+		"/E/Téléchargement/ParsePlatform-OfflineTodos-959e2a6/android/res/layout/com_parse_ui_parse_login_fragment.xml",
+		"/E/Téléchargement/redmine-3.0.0/README.rdoc",
+		"/E/Document/Libs/opencv/sources/README.md",
+		"/E/Document/Libs/opencv/sources/3rdparty/readme.txt",
+		"/E/Document/Libs/opencv/sources/CMakeLists.txt",
+		"/E/World of Warcraft/Logs/WoWCombatLog.txt",
+		"/E/Document/R.O.C-Embeded/Streaming/Server-v2/INC/Network/TcpPacket.hpp",
+		"/E/Document/saveROC/test pull/R.O.C-Embeded/Streaming/Client/ROC_Client/client.cpp",
+		"/E/Document/R.O.C-Embeded/Streaming/Server-v2/INC/Network/UdpPacket.hpp",
+		"/E/World of Warcraft/Interface/AddOns/AngryAssignments/AngryAssignments.toc",
+		"/E/Téléchargement/AngryAssignments-v1.5.3/AngryAssignments/Core.lua",
+		"/E/World of Warcraft/Interface/AddOns/AngryAssignments/Core.lua",
+		"/E/World of Warcraft/Interface/AddOns/AngryAssignments/libs/AceSerializer-3.0/AceSerializer-3.0.lua",
+		"/E/World of Warcraft/Interface/AddOns/AngryAssignments/libs/LibWindow-1.1/LibStub.lua",
+		"/E/World of Warcraft/Interface/AddOns/AngryAssignments/libs/LibCompress/LibCompress.lua",
+		"/E/Document/OculusRiftTest1/OculusRiftTest1/Source.cpp",
+		"/E/Document/R.O.C-Embeded/Streaming/Server-v2/INC/Network/Server.hpp",
+		"/E/Document/R.O.C-Embeded/Streaming/Server-v2/INC/Network/UdpServer.hpp",
+		"/E/Document/saveBis/R.O.C-Embeded/Streaming/Client/ROC_Client/client.cpp",
+		"/C/Users/Razgort/Desktop/testClient.txt",
+		"/E/Document/R.O.C-Embeded/Streaming/Server/SRC/main.cpp",
+		"/E/Document/R.O.C-Embeded/Streaming/Server/INC/Server.hpp",
+		"/E/Document/R.O.C-Embeded/Streaming/Server/SRC/EngineManager.cpp",
+		"/E/Document/R.O.C-Embeded/Streaming/Server/INC/EngineManager.hpp",
+		"/E/Document/R.O.C-Embeded/Streaming/Server/SRC/VideoEngine.cpp",
+		"/E/Document/R.O.C-Embeded/Streaming/Server/SRC/Server.cpp",
+		"/E/Document/R.O.C-Embeded/Streaming/Server/INC/VideoEngine.hpp",
+		"/E/Document/save ROC/R.O.C-Embeded/Streaming/Client/ROC_Client/mainwindow.cpp",
+		"/E/Document/save ROC/R.O.C-Embeded/Streaming/Client/ROC_Client/client.cpp",
+		"/E/Document/R.O.C-Embeded/Streaming/Server/Makefile",
+		"/E/Document/R.O.C-Embeded/Streaming/Client/ROC_Client/client.cpp",
+		"/C/Qt/Qt5.3.2/Tools/QtCreator/share/qtcreator/debugger/gdbbridge.py",
+		"/E/Téléchargement/planning_aer.py",
+		"/E/Document/Java/resultPlanning.txt",
+		"/E/Document/Java/Script_Planning/planning_aer.py",
+		"/C/Users/Razgort/Desktop/simcraftinputfile.txt",
+		"/E/Document/PSU_2013_zappy/src_client/src/ClientCore.cpp",
+		"/E/Document/PSU_2013_zappy/src_client/src/main.cpp",
+		"/E/Document/PSU_2013_zappy/src_client/src/ClientNetwork.cpp",
+		"/E/Document/PSU_2013_zappy/src_client/src/ClientCommand.cpp",
+		"/E/Téléchargement/Power AMC 15   Crack/Power AMC 15 + Crack/Méthode d'installation.txt",
+		"/E/World of Warcraft/Interface/AddOns/WeakAuras/WeakAuras.lua",
+		"/E/World of Warcraft/WTF/Account/ALEXMOULAY/SavedVariables/WeakAuras.lua",
+		"/E/World of Warcraft/WTF/Account/ALEXMOULAY/SavedVariables/WeakAuras.lua.bak",
+		"/E/World of Warcraft/Interface/AddOns/WeakAuras/Prototypes.lua",
+		"/E/World of Warcraft/Interface/AddOns/WeakAuras/libs/LibDataBroker-1.1/LibDataBroker-1.1.lua",
+		"/E/Téléchargement/calibre_plugins_nodrm/Calibre_Plugins/A_LIRE.txt",
+		"/E/Téléchargement/ScriptPlanning/Script_Planning/planning_aer.py",
+		"/E/Document/Java/EpiAndroid/Epitech/Epitech.iml",
+		"/E/World of Warcraft/Interface/AddOns/WeakAurasOptions/WeakAurasOptions.lua",
+		"/C/Users/Razgort/AppData/Local/Android/sdk/tools/android.txt",
+		"/E/WoWCombatLog.txt",
+		"/E/Document/Java EE/Nouveau document texte.txt",
+		"/C/Users/Razgort/AppData/Local/Temp/InitialisationDaoFactory.java"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<open folders>,<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"CanCastSevenSidedStrike",
+			"\nxdebug",
+			"\nxdebug.max_nesting",
+			"\nxdebug.max_nesting_level = 500",
+			"limit",
+			"factory[i]",
+			"xdebug.max_nesting_level",
+			"light-grey",
+			".active",
+			"nav",
+			"element.style",
+			"h1",
+			"h2",
+			"h1",
+			"page-scroll",
+			"btn-primary",
+			"bs-example-navbar-collapse-1",
+			"navbar-collapse",
+			"page-scroll",
+			"bs-example-navbar-collapse-1",
+			"navbar-brand page-scroll",
+			"portfolio-box-caption",
+			"project-name",
+			"            \n",
+			"portfo",
+			"fa-diamond",
+			".fa-4",
+			".fa {",
+			"fa-paper",
+			"f05f40",
+			"glyphicons",
+			"glyph",
+			"companyName",
+			"DEFAULT_CHAT_FRAME:AddMessage",
+			"name",
+			"sender",
+			"SendMessage",
+			"rece",
+			"fullname",
+			"EnsureUnitShortName",
+			"GetGuildRank",
+			"fullname",
+			"PermissionCheck",
+			"fullname",
+			"GetOnlyRaidLeader",
+			"player",
+			"GetRaidLeader",
+			"online",
+			"getRaidLeader",
+			"EnsureUnitFullName",
+			"GetRaidLeader",
+			"EnsureUnitFullName",
+			"unit",
+			"GetRaidLeader",
+			"PlayerFullName",
+			"UnitFullName",
+			"PlayerFullName",
+			"UnitFullName",
+			"EnsureUnitFullName",
+			"sender",
+			"GetNumGroupMembers()",
+			"IsInGroup()",
+			"permissionCheck(",
+			"function permissionCheck",
+			"PermissionCheck()",
+			"-----------------",
+			"-------------------------------",
+			"-------",
+			"PermissionCheck()",
+			"function PermissionCheck()",
+			"function $PermissionCheck()",
+			"AngryAssign:PermissionCheck()",
+			"function AngryAssign:PermissionCheck()",
+			":PermissionCheck()",
+			"::PermissionCheck()",
+			"PermissionCheck()",
+			"PermissionCheck",
+			"right",
+			"SendMessage",
+			"thread",
+			"Send",
+			"Receive",
+			"receive",
+			"axe toss",
+			"axe",
+			"axe toss",
+			"MW",
+			"toss",
+			"\"axe toss\"",
+			"Axe Toss",
+			"axe toss",
+			"NUL",
+			"getValeurChamp"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"tab"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ocr.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
