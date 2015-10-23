@@ -1,4 +1,4 @@
-.Trash*
-.*~
-*.pyc
-*.swp
+**/.Trash*
+**/.*~
+**/*.pyc
+**/*.swp
