@@ -1,6 +1,5 @@
 import numpy as np
 from skimage.color import rgb2gray
-from skimage import data
 from skimage import io
 from skimage.transform import resize
 
