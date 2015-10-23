@@ -16,7 +16,6 @@ def getImageArray(imagepath, units):
         exit()
         return np.zeros((10, 10))
 
-
 def readLines(path):
     arr = []
     try:
