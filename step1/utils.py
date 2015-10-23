@@ -14,7 +14,6 @@ def getImageArray(imagepath, units):
     except IOError:
         print("File "+ imagepath +" not found !")
         exit()
-        return np.zeros((10, 10))
 
 def readLines(path):
     arr = []
