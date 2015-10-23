@@ -47,9 +47,20 @@ class nn:
 
     def trainingOnDataSet(self):
         trainer = BackpropTrainer(self.n, self.ds)
-        print "toto"
-        result = trainer.train()
-        print result
+        result = 200
+        while result > 100:
+            result = trainer.train()
+            print result
+
+
+        newds = SupervisedDataSet(
+            self.pix_size * self.pix_size, len(results))
+
+        newds.addSample(
+                self.input_value[0], utils.getPosition('a', results))
+
+        print 'MSE train', trainer.testOnData(newds, verbose = True)
+
 
     def __init__(self, input_path, output_path):
         self.n = FeedForwardNetwork()
