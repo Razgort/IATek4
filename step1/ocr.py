@@ -5,10 +5,13 @@ from pybrain.datasets import SupervisedDataSet
 from pybrain.structure import FeedForwardNetwork
 from pybrain.structure import LinearLayer, SigmoidLayer
 from pybrain.structure import FullConnection
+from pybrain.supervised.trainers import BackpropTrainer
 
 results = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
 
+
 class nn:
+
     def initilizeNetwork(self):
         inputLayer = LinearLayer(self.inputUnits)
         hiddenLayers = []
@@ -39,7 +42,14 @@ class nn:
             exit()
 
         for i in range(0, len(self.input_value)):
-            self.ds.addSample(self.input_value[i], utils.getPosition(self.output_value[i], results))
+            self.ds.addSample(
+                self.input_value[i], utils.getPosition(self.output_value[i], results))
+
+    def trainingOnDataSet(self):
+        trainer = BackpropTrainer(self.n, self.ds)
+        print "toto"
+        result = trainer.train()
+        print result
 
     def __init__(self, input_path, output_path):
         self.n = FeedForwardNetwork()
@@ -50,12 +60,14 @@ class nn:
         self.nbHiddenLayers = 1
         self.hiddenUnits = 500
         self.outputUnits = len(results)
-        self.ds = SupervisedDataSet(self.pix_size * self.pix_size, len(results))
+        self.ds = SupervisedDataSet(
+            self.pix_size * self.pix_size, len(results))
 
         self.initializeDataSet()
         self.initilizeNetwork()
+        self.trainingOnDataSet()
 
-        
+
 def main():
     nn("./input_data", "./output_data")
 

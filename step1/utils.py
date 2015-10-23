@@ -9,11 +9,12 @@ def getImageArray(imagepath, units):
     try:
         img = io.imread(imagepath)
         img = resize(img, (units, units))
-        img_gray = rgb2gray(img)       
+        img_gray = rgb2gray(img)
         return np.array(img_gray).flatten()
     except IOError:
-        print("File "+ imagepath +" not found !")
+        print("File " + imagepath + " not found !")
         exit()
+
 
 def readLines(path):
     arr = []
@@ -27,11 +28,13 @@ def readLines(path):
         exit()
     return arr
 
+
 def getImages(files):
     result = []
     for f in files:
         result.append(getImageArray(f, 50))
     return result
+
 
 def getPosition(letter, result_array):
     new_array = np.zeros(len(result_array))
