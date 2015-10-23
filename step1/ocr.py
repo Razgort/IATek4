@@ -34,6 +34,10 @@ class nn:
         self.n.addConnection(hidden_to_output)
         self.n.sortModules()
 
+    def initializeDataSet(self):
+        for i in range(0, 5):
+            print i
+
     def __init__(self, input_path, output_path):
         self.n = FeedForwardNetwork()
         self.pix_size = 50
@@ -44,7 +48,7 @@ class nn:
         self.hiddenUnits = 500
         self.outputUnits = len(results)
         self.ds = SupervisedDataSet(self.pix_size * self.pix_size, len(results))
-
+        self.initializeDataSet()
         self.initilizeNetwork()
 
         
