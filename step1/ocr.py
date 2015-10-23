@@ -22,8 +22,11 @@ class nn:
         hiddenLayers = []
         for i in range(0, self.nbHiddenLayers):
             hiddenLayers.append(SigmoidLayer(self.hiddenUnits))
+            self.n.addModule(hiddenLayers[i])
         outputLayer = LinearLayer(self.outputUnits)
 
+        self.n.addInputModule(inputLayer)
+        self.n.addOutputModule(outputLayer)
         input_to_hidden = FullConnection(inputLayer, hiddenLayers[0])
         hidden_to_hidden = []
         if len(hiddenLayers) > 1:
@@ -36,6 +39,8 @@ class nn:
         for hidden in hidden_to_hidden:
             self.n.addConnection(hidden)
         self.n.addConnection(hidden_to_output)
+        self.n.sortModules()
+        print self.n
 
 
 def main():
