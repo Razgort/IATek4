@@ -6,8 +6,7 @@ from pybrain.structure import FeedForwardNetwork
 from pybrain.structure import LinearLayer, SigmoidLayer
 from pybrain.structure import FullConnection
 
-
-results = "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+results = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
 
 class nn:
     def initilizeNetwork(self):
@@ -35,8 +34,12 @@ class nn:
         self.n.sortModules()
 
     def initializeDataSet(self):
-        for i in range(0, 5):
-            print i
+        if len(self.input_value) != len(self.output_value):
+            print "Input and output arrays aren't the same size."
+            exit()
+
+        for i in range(0, len(self.input_value)):
+            self.ds.addSample(self.input_value[i], utils.getPosition(self.output_value[i], results))
 
     def __init__(self, input_path, output_path):
         self.n = FeedForwardNetwork()
@@ -48,6 +51,7 @@ class nn:
         self.hiddenUnits = 500
         self.outputUnits = len(results)
         self.ds = SupervisedDataSet(self.pix_size * self.pix_size, len(results))
+
         self.initializeDataSet()
         self.initilizeNetwork()
 
