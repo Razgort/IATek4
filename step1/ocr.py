@@ -10,7 +10,6 @@ from pybrain.structure import FullConnection
 results = "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
 
 class nn:
-
     def initilizeNetwork(self):
         inputLayer = LinearLayer(self.inputUnits)
         hiddenLayers = []
@@ -49,7 +48,6 @@ class nn:
         self.initilizeNetwork()
 
         
-
 def main():
     nn("./input_data", "./output_data")
 
