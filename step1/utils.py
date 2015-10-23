@@ -1,15 +1,18 @@
 import numpy as np
-import Image as im
+from skimage.color import rgb2gray
+from skimage import data
+from skimage import io
+from skimage.transform import resize
 
 
 def getImageArray(imagepath, units):
     try:
-        image = im.open(imagepath)
-        imagearray = np.asarray(
-            image.crop(image.getbbox()).resize((units, units)))
-        return imagearray
+        img = io.imread(imagepath)
+        img = resize(img, (units, units))
+        img_gray = rgb2gray(img)       
+        return img_gray
     except IOError:
-        print("File not found !")
+        print("File "+ imagepath +" not found !")
         exit()
         return np.zeros((10, 10))
 
@@ -19,10 +22,15 @@ def readLines(path):
     try:
         f = open(path, 'r')
         for l in f:
-            arr.append(l)
-
+            arr.append(l.replace("\n", ''))
         f.close()
     except IOError:
         print("File not found !")
         exit()
     return arr
+
+def getImages(files):
+    result = []
+    for f in files:
+        result.append(getImageArray(f, 50))
+    return result
