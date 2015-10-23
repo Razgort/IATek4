@@ -37,5 +37,4 @@ def getPosition(letter, result_array):
     new_array = np.zeros(len(result_array))
     index = result_array.index(letter)
     new_array[index] = 1
-    print new_array
     return new_array
