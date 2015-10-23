@@ -9,28 +9,21 @@ class nn:
   def __init__(self, input_path, output_path):
     self.n = FeedForwardNetwork()
     self.pix_size = 50
-    self.input_paths = utils.readLines(input_path)
+    self.input_value = utils.readLines(input_path)
     self.output_value = utils.readLines(output_path)
     self.inputUnits = self.pix_size * self.pix_size 
     self.nbHiddenLayers = 1
     self.hiddenUnits = 500
-    self.outputUnits = len(self.output_value)
+    self.outputUnits = 1
 
     inputLayer = LinearLayer(self.inputUnits)
-    hiddenLayers = []
-    for i in range(0, self.nbHiddenLayers):
-      hiddenLayers.append(SigmoidLayer(self.hiddenUnits))
+    hiddenLayer = SigmoidLayer(self.hiddenUnits)
     outputLayer = LinearLayer(self.outputUnits)
   
-    input_to_hidden = FullConnection(inputLayer, hiddenLayers[0])
-    hidden_to_hidden = []
-    if len(hiddenLayers) > 1:
-      for i in range(1, len(hiddenLayers) - 2):
-        hidden_to_hidden.append(FullConnection(hiddenLayers[i], hiddenLayers[i+1]))
-    hidden_to_output = FullConnection(hiddenLayers[len(hiddenLayers) - 1], outputLayer)  
+    input_to_hidden = FullConnection(inputLayer, hiddenLayer)
+    hidden_to_output = FullConnection(hiddenLayer, outputLayer) 
+
     self.n.addConnection(input_to_hidden)
-    for hidden in hiddenLayers:
-      self.n.addConnection(hidden)
     self.n.addConnection(hidden_to_output)
 
 
